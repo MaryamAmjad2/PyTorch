@@ -1,0 +1,32 @@
+loss.backward() cal gradients of the the leaf tensors.
+always use grad.zero_() to reset and avoid gradient getting added.
+Rule= new_val=old_value - (learn_rate * grad) for gradient desenet.
+
+
+Neural Network with nn.model
+
+PyTorch ka wo parent class hai jisse har neural network banta hai. Jab tum apna khud ka
+ model banana chahte ho, tum nn.Module se inherit karte ho.
+
+
+Raw tensor can break and data is stored anywhere while in nn.model data is stored in organized manaer 
+and automaticallly traced and has clean stucture.
+
+1. Output size Should be fixed.
+2. Input should match input features.
+
+
+Activation Function:
+ Softmax ,relu, sigmoid etc
+
+Optimizers:
+update weights like gradient descent.
+SGD, Adam,
+
+Dataset and DataLoaders:
+  feeding small chunks of data aka batching
+
+
+
+
+LINK: https://www.youtube.com/watch?v=UqA7bxp7VBk&t=8944s
